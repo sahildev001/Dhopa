@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#f7faff"
+
+    android:orientation="vertical"
+    tools:context=".Fragments.FragmentHome">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#0e2a52">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Location"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:layout_marginLeft="10dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:drawableTint="#01afe5"
+            android:layout_height="wrap_content"
+            android:text="Mohali"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:drawableLeft="@drawable/ic_baseline_postcode_24"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_baseline_change_circle_24"
+            android:gravity="right"
+            android:drawableTint="#01afe5"
+            android:text="CHANGE"
+            android:layout_marginRight="10dp"
+            android:textColor="#01afe5"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/search_box"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="  Search Laundry shops by name..."
+        android:drawableLeft="@drawable/ic_baseline_search_24"
+        android:inputType="text"
+        android:textSize="18sp"/>
+</LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Top Services"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:padding="10dp"/>
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:padding="10dp">
+       <androidx.cardview.widget.CardView
+           android:layout_width="0dp"
+           android:layout_weight="1"
+           android:layout_height="wrap_content"
+           app:cardCornerRadius="10dp"
+           android:layout_marginLeft="10dp"
+           android:layout_marginRight="10dp"
+           >
+
+       <ImageView
+           android:layout_margin="10dp"
+           android:layout_width="wrap_content"
+           android:layout_gravity="center"
+           android:layout_height="wrap_content"
+           android:src="@drawable/ic_wash"/>
+
+       </androidx.cardview.widget.CardView>
+       <androidx.cardview.widget.CardView
+           android:layout_width="0dp"
+           android:layout_weight="1"
+           android:layout_height="wrap_content"
+           app:cardCornerRadius="10dp"
+
+           android:layout_marginLeft="10dp"
+           android:layout_marginRight="10dp"
+           >
+
+           <ImageView
+               android:layout_margin="10dp"
+               android:layout_width="wrap_content"
+               android:layout_gravity="center"
+               android:layout_height="wrap_content"
+               android:src="@drawable/ic_iron"/>
+
+       </androidx.cardview.widget.CardView>
+       <androidx.cardview.widget.CardView
+           android:layout_width="0dp"
+           android:layout_weight="1"
+           android:layout_height="wrap_content"
+           app:cardCornerRadius="10dp"
+           android:layout_marginLeft="10dp"
+           android:layout_marginRight="10dp"
+           >
+
+           <ImageView
+               android:layout_margin="10dp"
+               android:layout_width="wrap_content"
+               android:layout_gravity="center"
+               android:layout_height="wrap_content"
+               android:src="@drawable/ic_dryclean"/>
+
+       </androidx.cardview.widget.CardView>
+       <androidx.cardview.widget.CardView
+           android:layout_width="0dp"
+           android:layout_weight="1"
+           android:layout_height="wrap_content"
+           app:cardCornerRadius="10dp"
+            android:padding="10dp"
+           android:layout_marginLeft="10dp"
+           android:layout_marginRight="10dp"
+           >
+
+           <ImageView
+               android:layout_margin="10dp"
+               android:layout_width="wrap_content"
+               android:layout_gravity="center"
+               android:layout_height="wrap_content"
+               android:src="@drawable/ic_premium"/>
+
+       </androidx.cardview.widget.CardView>
+
+   </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="Wash &amp; Fold"
+            android:textSize="13sp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="Wash &amp; Iron"
+            android:textSize="13sp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="Dry Clean"
+            android:textSize="13sp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="Premium Wash"
+            android:textSize="13sp"
+            android:textColor="@color/black"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Dhopa Reviews"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:padding="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View All"
+                android:layout_marginRight="10dp"
+                android:textSize="15sp"/>
+
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+           app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/recycle_adapter"
+            android:orientation="horizontal"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Special package &amp; offers"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:padding="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View All"
+            android:layout_marginRight="10dp"
+            android:textSize="15sp"/>
+
+
+
+    </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewOffers"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/recycle_adapter"
+            android:layout_marginBottom="55dp"
+            android:orientation="horizontal"/>
+
+
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

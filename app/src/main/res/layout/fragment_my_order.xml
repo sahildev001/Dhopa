@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f7faff"
+    android:id="@+id/frameMyorder"
+    tools:context=".Fragments.MyOrderFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarOrder"
+            android:layout_width="match_parent"
+            android:elevation="10dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            >
+            <TextView
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="My Order Details"
+                android:layout_marginLeft="80dp"/>
+        </androidx.appcompat.widget.Toolbar>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="10dp"
+                android:layout_margin="5dp"
+                android:backgroundTint="@color/white"
+                >
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Order No - 110040717 "
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Wed, 04 Mar 2021, 11:35 PM"
+                    android:textSize="15sp"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="#D8CFCF" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Items"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#D8CFCF" />
+
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   >
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="WashUp &amp; Fold"
+                       android:layout_centerInParent="true"
+                       android:layout_alignParentLeft="true"
+                       android:layout_marginLeft="15dp"
+                       android:textColor="@color/black"
+                       android:textSize="20sp"/>
+                   <ImageView
+                       android:id="@+id/ivFold"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:src="@drawable/ic_baseline_arrow_up_24"
+                       android:layout_alignParentRight="true"
+                       android:layout_marginRight="15dp"/>
+
+               </RelativeLayout>
+                <LinearLayout
+                    android:id="@+id/llFold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                   <RelativeLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+
+                       >
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:textColor="@color/black"
+                           android:layout_marginLeft="15dp"
+                           android:text="2 X T-Shirt (Men)"
+                           android:layout_alignParentLeft="true"
+                           android:textSize="15sp"/>
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:textColor="@color/black"
+                           android:layout_alignParentRight="true"
+                       android:layout_marginRight="15dp"
+                           android:text="$10.00"/>
+                   </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:layout_marginLeft="15dp"
+                            android:text="2 X T-Shirt (Men)"
+                            android:layout_alignParentLeft="true"
+                            android:textSize="15sp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="15dp"
+                            android:text="$10.00"/>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:layout_marginLeft="15dp"
+                            android:text="2 X T-Shirt (Men)"
+                            android:layout_alignParentLeft="true"
+                            android:textSize="15sp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="15dp"
+                            android:text="$10.00"/>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="WashUp &amp; Iron"
+                        android:layout_centerInParent="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="15dp"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"/>
+                    <ImageView
+                        android:id="@+id/ivIron"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_arrow_up_24"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="15dp"/>
+
+                </RelativeLayout>
+                <LinearLayout
+                    android:id="@+id/llIron"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:layout_marginLeft="15dp"
+                            android:text="2 X T-Shirt (Men)"
+                            android:layout_alignParentLeft="true"
+                            android:textSize="15sp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="15dp"
+                            android:text="$10.00"/>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="15dp"
+                            android:text="2 X T-Shirt (Men)"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="15dp"
+                            android:text="$10.00"/>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:layout_marginLeft="15dp"
+                            android:text="2 X T-Shirt (Men)"
+                            android:layout_alignParentLeft="true"
+                            android:textSize="15sp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="15dp"
+                            android:text="$10.00"/>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:layout_marginTop="9dp"
+                    android:layout_marginBottom="15dp"
+                    android:backgroundTint="@color/grey" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="15dp"
+
+                        android:text="Subtotal"
+                        android:layout_alignParentLeft="true"
+                        android:textSize="20sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="25dp"
+                        android:text="$220.50"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/grey"
+                        android:layout_marginLeft="15dp"
+                        android:text="Tax"
+                        android:layout_alignParentLeft="true"
+                        android:textSize="15sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/grey"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="15dp"
+                        android:text="$20.25"/>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:layout_marginTop="9dp"
+                    android:layout_marginBottom="15dp"
+                    android:backgroundTint="@color/grey" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="15dp"
+                        android:text="Total"
+                        android:layout_alignParentLeft="true"
+                        android:textSize="20sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="15dp"
+                        android:text="$10.00"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="10dp"
+                    android:layout_margin="5dp"
+                    android:backgroundTint="@color/white"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                            android:layout_width="wrap_content"
+                            android:id="@+id/fabTruck"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="15dp"
+                            android:tint="@color/white"
+                            android:src="@drawable/ic_delivery_truck_movement_svgrepo_com"
+                            android:backgroundTint="#f7faff"
+                            android:tintMode="add"
+                            />
+                        <TextView
+                            android:id="@+id/tvOrderStatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/fabTruck"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:text="Order Status"
+                            android:layout_marginLeft="15dp"
+                            android:textSize="20sp"
+                            />
+                        <TextView
+                            android:id="@+id/tvThisOrderOutOfDelivery"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:layout_below="@+id/tvOrderStatus"
+                            android:layout_marginLeft="15dp"
+                            android:layout_toRightOf="@+id/fabTruck"
+                            android:text="This order is out of delivery"
+                            android:textColor="@color/grey"
+                            />
+                        <TextView
+                            android:id="@+id/tvViewDetails"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:layout_below="@+id/tvThisOrderOutOfDelivery"
+                            android:layout_marginLeft="15dp"
+                            android:layout_toRightOf="@+id/fabTruck"
+                            android:text="@string/view_details"
+                            android:textColor="#59BEEC"
+                            />
+
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="10dp"
+                    android:layout_marginBottom="65dp"
+                    android:backgroundTint="@color/white"
+                    >
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+                        <TextView
+                            android:id="@+id/tvLaundryShop"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Laundry Shop"
+                            android:layout_alignParentTop="true"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
+                            android:layout_marginLeft="15dp"
+                            />
+                        <ImageView
+                            android:id="@+id/IvLaundryShop"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tvLaundryShop"
+                            android:src="@drawable/ic_hanger_tool_line_svgrepo_com"
+                            android:layout_marginLeft="15dp"
+                            />
+                        <TextView
+                            android:id="@+id/tvDhobeeLaundry"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Dhopa Laundry"
+                            android:layout_below="@+id/tvLaundryShop"
+                            android:layout_toRightOf="@id/IvLaundryShop"
+                            android:textSize="20sp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            />
+
+                        <RatingBar
+                            android:id="@+id/RatingBar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:numStars="5"
+                            style="?ratingBarStyleSmall"
+                            android:isIndicator="true"
+
+                            android:layout_below="@id/tvDhobeeLaundry"
+                            android:layout_toRightOf="@id/IvLaundryShop"
+                            android:progressTint="#ECD61B"
+                            android:rating="4.0" />
+                        <TextView
+                            android:id="@+id/tvRating"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:layout_toRightOf="@+id/RatingBar"
+                            android:layout_below="@+id/tvDhobeeLaundry"
+                            android:textSize="10sp"/>
+                        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_baseline_call_24"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerInParent="true"
+                            android:tintMode="add"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/IvLaundryShop"
+                            android:textColor="@color/grey"
+
+
+                            android:text="@string/DhobeeLaundaryAddress"/>
+
+
+
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+        </ScrollView>
+
+
+
+    </LinearLayout>
+
+</FrameLayout>

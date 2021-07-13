@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mapsFrame"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.PinYourLocationMapsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <androidx.appcompat.widget.Toolbar
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:text="Pin Your Location"
+                android:gravity="center"
+                android:drawableLeft="@drawable/ic_baseline_arrow_back_24"/>
+
+        </androidx.appcompat.widget.Toolbar>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/maps_bg"
+            >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="25dp"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/bg_circle_corner_box"
+                android:padding="15dp"
+                android:drawableLeft="@drawable/ic_baseline_search_24"
+                android:hint="Search"/>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="35dp"
+                android:layout_marginBottom="30dp"
+                android:backgroundTint="@color/white"
+                android:src="@drawable/ic_baseline_my_location_24"
+                android:tint="@color/color_primary" />
+
+
+            <com.google.android.material.card.MaterialCardView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="25dp"
+                android:clickable="true"
+                android:layout_alignParentBottom="true"
+                app:cardBackgroundColor="@color/color_primary"
+                android:padding="25dp"
+                android:background="@drawable/cv_state"
+                app:cardCornerRadius="60dp"
+
+                android:layout_marginBottom="150dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="45dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="horizontal">
+
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+
+                        android:layout_centerInParent="true"
+                        android:text="Pin Here"
+                        android:textColor="@color/white"
+                        android:textSize="25sp" />
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/ic_baseline_arrow_forward_24"
+                        android:backgroundTint="@color/white"/>
+
+
+
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+
+
+
+
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</FrameLayout>

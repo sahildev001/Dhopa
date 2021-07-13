@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Dhopa</string>
+    <string name="image_icon">image icon</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="pin_your_location"><u>Pin Your Location</u></string>
+    <string name="view_details"><u>View Details</u></string>
+    <string name="DhobeeLaundaryAddress">1810 Camino Real, Redwood City,\n CA 94063, United States</string>
+    <string name="tshirt_and_price">T-shirt <br> </br> $5.00</string>
+    <string name="address_pickup">H No. 3341, 2nd Floor, Sector 21D, Near \nAroma Hotel, Chandigarh, 160022</string>
+    <string name="address_pickup2">Plot no. E-216, 1st Floor, Phase 8b,\nIndustrial Area, Sector 74, 160055</string>
+</resources>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/Menuhome"
+        android:checked="true"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="Home"/>
+    <item android:id="@+id/Menupostcode"
+        android:icon="@drawable/ic_baseline_postcode_24"
+        android:title="Postcode"/>
+    <item android:id="@+id/Menubookings"
+        android:icon="@drawable/ic_baseline_booking_24"
+        android:title="Bookings"/>
+    <item android:id="@+id/Menuoffers"
+        android:icon="@drawable/ic_percentage_svgrepo_com"
+        android:title="Offers"/>
+    <item android:id="@+id/Menuprofile"
+        android:icon="@drawable/person"
+        android:title="Profile"/>
+</menu>

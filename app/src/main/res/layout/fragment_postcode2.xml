@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/postCodeContainer2"
+    android:background="#f7faff"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.Postcode2">
+
+    <!-- TODO: Update blank fragment layout -->
+   <LinearLayout
+       android:layout_width="match_parent"
+
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+       <androidx.appcompat.widget.Toolbar
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+         android:background="@color/color_primary"
+           >
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="The Perfect Move"
+               android:textSize="20sp"
+               android:textStyle="bold"
+               android:textColor="@color/white"
+               android:layout_marginLeft="10dp"/>
+
+       </androidx.appcompat.widget.Toolbar>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:background="@color/color_primary"
+           android:orientation="vertical">
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="15dp"
+               android:layout_marginTop="20dp"
+               android:layout_marginRight="15dp"
+               android:drawableLeft="@drawable/ic_baseline_postcode_24"
+               android:drawableTint="#2196F3"
+               android:textColor="@color/white"
+               android:textSize="20sp"
+               android:text="Collection Address or Postcode"/>
+           <EditText
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="15dp"
+               android:layout_marginRight="15dp"
+               android:background="@drawable/search_box"
+               android:layout_marginTop="10dp"
+               android:layout_marginBottom="10dp"
+               android:drawableLeft="@drawable/ic_baseline_search_24"
+               android:textSize="18sp"
+               android:textColor="@color/black"
+               android:hint="  Mohali"
+               android:padding="3dp"
+               />
+
+
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="15dp"
+               android:layout_marginRight="15dp"
+               android:drawableLeft="@drawable/ic_baseline_postcode_24"
+               android:drawableTint="#2196F3"
+               android:textColor="@color/white"
+               android:textSize="20sp"
+               android:text="Delivery Address or Postcode"/>
+           <EditText
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="15dp"
+               android:layout_marginRight="15dp"
+               android:background="@drawable/search_box"
+               android:layout_marginTop="10dp"
+               android:layout_marginBottom="25dp"
+               android:drawableLeft="@drawable/ic_baseline_search_24"
+               android:textSize="18sp"
+               android:textColor="@color/black"
+               android:hint="  Kharar"
+               android:padding="3dp"
+               />
+       </LinearLayout>
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:background="#f7faff"
+           android:layout_height="500dp"
+
+           >
+
+
+
+
+           <com.google.android.material.card.MaterialCardView
+               android:id="@+id/cvGo"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:elevation="25dp"
+               android:clickable="true"
+
+               android:padding="25dp"
+               android:backgroundTint="@color/color_primary"
+               app:cardCornerRadius="60dp"
+               android:layout_marginTop="205dp"
+               android:layout_marginBottom="45dp"
+               android:layout_marginLeft="25dp"
+               android:layout_marginRight="25dp">
+
+               <RelativeLayout
+
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                  >
+                   <TextView
+                       android:id="@+id/tvGo"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center"
+                       android:gravity="center"
+
+                       android:layout_centerInParent="true"
+                       android:text="Go"
+                       android:textColor="@color/white"
+                       android:textSize="25sp"
+                       />
+                   <com.google.android.material.floatingactionbutton.FloatingActionButton
+                       android:layout_width="wrap_content"
+                      android:layout_alignParentRight="true"
+                       android:layout_margin="10dp"
+                       android:layout_height="wrap_content"
+                       android:src="@drawable/ic_baseline_arrow_forward_24"
+                       android:backgroundTint="@color/white"
+                       />
+               </RelativeLayout>
+
+           </com.google.android.material.card.MaterialCardView>
+
+
+       </RelativeLayout>
+   </LinearLayout>
+
+</FrameLayout>

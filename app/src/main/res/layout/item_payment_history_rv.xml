@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="15dp"
+        android:padding="6dp"
+        app:cardElevation="15dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:id="@+id/ivcreditCard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:padding="3dp"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/ic_credit_card_debit_card_svgrepo_com"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"/>
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/userPayment"
+                android:layout_width="130px"
+                android:layout_height="130px"
+                android:layout_below="@+id/ivcreditCard"
+                android:layout_marginLeft="5dp"
+                android:padding="3dp"
+                android:src="@drawable/dp"/>
+
+            <ImageView
+                android:id="@+id/paymentMethodWash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="38dp"
+                android:layout_marginTop="18dp"
+                android:layout_toRightOf="@+id/ivcreditCard"
+                android:padding="3dp"
+                android:src="@drawable/ic_wash" />
+
+            <TextView
+                android:id="@+id/tvWash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/paymentMethodWash"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="11dp"
+                android:layout_toRightOf="@+id/userPayment"
+                android:text="Wash &amp; Fold"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tvli"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvWash"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@+id/userPayment"
+                android:text="lorem ipsum"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/paymentDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvli"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="5dp"
+                android:layout_toRightOf="@id/userPayment"
+                android:text="AUS 01 ML 7777"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_check_circle_24"
+                app:tint="@color/color_primary"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                />
+
+            <TextView
+                android:id="@+id/tvTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/paymentDate"
+                android:layout_alignParentRight="true"
+                android:maxLines="1"
+                android:layout_marginLeft="55dp"
+                android:layout_toRightOf="@id/paymentDate"
+                android:text="March 05,11:00 pm"
+                android:textSize="10sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/tvTime"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="14dp"
+                android:layout_marginRight="15dp"
+                android:textSize="14sp"
+                android:text="$ 95.00"
+                android:textColor="@color/black" />
+
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

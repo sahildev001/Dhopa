@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/postCodeContainer"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#f7faff"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.PostcodeChooseYourOPotion">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f7faff"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:background="@color/color_primary"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Place Your Order"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/white"
+                android:layout_marginLeft="10dp"/>
+        </androidx.appcompat.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="800dp"
+            android:background="#f7faff"
+            android:orientation="vertical"
+            >
+            <View
+                android:layout_width="250dp"
+                android:layout_marginTop="50dp"
+                android:layout_height="1dp"
+                android:layout_marginBottom="5dp"
+                android:background="#D8CFCF" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Choose Your Option"
+                android:textColor="#0e2a52"
+                android:textSize="20sp"
+                android:padding="10dp"/>
+            <View
+                android:layout_width="250dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="#D8CFCF"
+                android:layout_marginBottom="30dp"/>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cvHome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="25dp"
+                    android:clickable="true"
+                    android:layout_marginTop="50dp"
+                    android:padding="25dp"
+                    app:cardBackgroundColor="@color/color_primary"
+                    android:background="@drawable/cv_state"
+                    app:cardCornerRadius="60dp"
+                    android:layout_marginBottom="45dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_baseline_home_55"
+                            android:backgroundTint="@color/white"/>
+
+                        <TextView
+                            android:id="@+id/tvHome"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Home"
+                            android:padding="20dp"
+                            android:textColor="@color/white"
+                            android:textSize="25sp" />
+
+
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cvOffice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="10dp"
+                    android:background="@drawable/cv_state"
+                    android:padding="25dp"
+                    android:clickable="true"
+
+                    app:cardCornerRadius="100dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                            android:layout_width="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_gravity="center"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_building_svgrepo_com_1_"
+                            android:backgroundTint="@color/white"
+                            />
+                        <TextView
+                            android:id="@+id/tvOffice"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="Office"
+                            android:textColor="@color/black"
+                            android:textSize="25sp"
+                            android:padding="20dp"
+                            />
+
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+</FrameLayout>
